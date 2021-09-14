@@ -1,3 +1,3 @@
+npm install next -g
 yarn
-npm install next
 yarn export
