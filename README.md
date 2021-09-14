@@ -130,3 +130,14 @@ OSS Bucket具有该托管能力，需要在使用的OSS Bucket内，选择「基
 3.5 （可选）使用CDN加速域名访问，节约流量费用
 
 可点击「部署配置」中的「如何配置CDN加速」，将自己的域名与CDN加速绑定，从而加速网站访问。
+## 三、应用下线
+
+云开发平台功能完全免费，但OSS存储会收取您存储、上传、下载的流量费用，具体请见： https://help.aliyun.com/document_detail/173521.html
+
+如果希望马上停止应用计费，目前请您在OSS控制台指定Bucket内进行手动操作： https://oss.console.aliyun.com/bucket
+
+进入您在「部署配置」中选择的Bucket，点击「文件管理」，并在多选框中勾选所有存储的文件，点击「删除」，即可即时完全停止应用被外界访问。
+
+<img src="https://ecoboost-readme-image.oss-cn-shanghai.aliyuncs.com/feApp/github/lifeRestart/ossdelete.png" width="500">
+
+当您需要启动时，只要重新点击云开发平台的部署按钮即可开始部署。云开发平台会尽快增加一键停服的自动化功能，方便您随时暂停应用。
