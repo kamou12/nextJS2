@@ -1,4 +1,4 @@
 npm install next -g
-next 
+next init
 yarn
 yarn export
